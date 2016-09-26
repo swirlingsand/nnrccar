@@ -59,8 +59,8 @@
     <target name="Driver">
         <java classname="org.davidsingleton.nnrccar.Driver" failonerror="true" fork="yes">
             <classpath refid="Driver.classpath"/>
-            <arg value="/dev/tty.usbmodemfa131"/>
-            <jvmarg value="-Dgnu.io.rxtx.SerialPorts=/dev/tty.usbmodemfa131" />
+            <arg value="COM4"/>
+            <jvmarg value="-Dgnu.io.rxtx.SerialPorts=COM4" />
         </java>
     </target>
     <target name="TestSerial">

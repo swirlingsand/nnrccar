@@ -16,7 +16,7 @@ import java.util.TooManyListenersException;
 public class TestSerial {
 
   public static void main(String[] args) {
-		String portName = "/dev/tty.usbmodemfd131";
+		String portName = "COM4";
 		
 		Enumeration ports = CommPortIdentifier.getPortIdentifiers();
 		while (ports.hasMoreElements()) {
